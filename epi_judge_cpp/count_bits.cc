@@ -2,7 +2,18 @@
 
 short CountBits(unsigned int x) {
   // TODO - you fill in here.
-  return 0;
+  // unsigned int is 32 bits
+  // short is 16 bits
+  // shift and mask 
+  short res = 0;
+  while (x) {
+    auto mask = 0x00000001;
+    if ((mask & x) == 1) {
+      res++;
+    }
+    x = x >> 1;
+  }
+  return res;
 }
 
 int main(int argc, char* argv[]) {
