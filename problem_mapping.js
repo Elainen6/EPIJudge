@@ -1328,7 +1328,7 @@ problem_mapping = {
         },
         "11.03 Search a cyclically sorted array": {
             "C++: search_shifted_sorted_array.cc": {
-                "passed": 0,
+                "passed": 307,
                 "total": 307
             },
             "Java: SearchShiftedSortedArray.java": {
@@ -1342,7 +1342,7 @@ problem_mapping = {
         },
         "11.04 Compute the integer square root": {
             "C++: int_square_root.cc": {
-                "passed": 0,
+                "passed": 2000,
                 "total": 2000
             },
             "Java: IntSquareRoot.java": {

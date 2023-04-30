@@ -4,7 +4,31 @@
 using std::vector;
 
 int SearchSmallest(const vector<int>& A) {
+  if (A.size() < 2) {
+    return A.size() - 1;
+  }
+  if (A.size() == 2) {
+    if (A[0] < A[1]) {
+      return 0;
+    } else {
+      return 1;
+    }
+  }
   // TODO - you fill in here.
+  int left = 0;
+  int right = A.size() - 1;
+  while(left <= right) {
+    int mid = left + ((right - left) / 2);
+    if (A[mid] < A[mid + 1] && A[mid] < A[mid - 1]) {
+      return mid;
+    } else if (A[mid] < A[0]) {
+      if (mid == right) return mid;
+      right = mid - 1;
+    } else {
+      
+      left = mid + 1;
+    }
+  }
   return 0;
 }
 
