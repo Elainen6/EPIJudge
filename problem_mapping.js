@@ -326,7 +326,7 @@ problem_mapping = {
         },
         "5.11 Compute the next permutation": {
             "C++: next_permutation.cc": {
-                "passed": 0,
+                "passed": 2001,
                 "total": 2001
             },
             "Java: NextPermutation.java": {
@@ -340,7 +340,7 @@ problem_mapping = {
         },
         "5.12 Sample offline data": {
             "C++: offline_sampling.cc": {
-                "passed": 0,
+                "passed": 8,
                 "total": 8
             },
             "Java: OfflineSampling.java": {
@@ -354,7 +354,7 @@ problem_mapping = {
         },
         "5.13 Sample online data": {
             "C++: online_sampling.cc": {
-                "passed": 0,
+                "passed": 7,
                 "total": 7
             },
             "Java: OnlineSampling.java": {
