@@ -8,6 +8,16 @@
 using std::vector;
 void Rearrange(vector<int>* A_ptr) {
   // TODO - you fill in here.
+  vector<int>& vec = *A_ptr;
+  for (int i = 0; i + 1 < vec.size(); i++) {
+    if (i % 2 == 0 && vec[i] > vec[i + 1]) {
+      std::swap(vec[i], vec[i + 1]);
+    }
+    if (i % 2 && vec[i] < vec[i + 1]) {
+      std::swap(vec[i], vec[i + 1]);
+    }
+    
+  }
   return;
 }
 void CheckAnswer(const vector<int>& A) {
