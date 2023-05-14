@@ -40,7 +40,8 @@ shared_ptr<ListNode<int>> ReverseSublist(shared_ptr<ListNode<int>> L, int start,
   auto dummy_head = make_shared<ListNode<int>>(ListNode<int>{0, L});
   auto sublist_head = dummy_head;
   int k = 1;
-  while(k++ < start) {
+  while(k < start) {
+    k++;
     sublist_head = sublist_head->next;
   }
   auto sublist_iter = sublist_head->next;
